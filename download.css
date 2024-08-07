@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
+}
+
+body {
+    margin-top: 90px;
+    background-image:url(img/konoha_fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.sociais img {
+    height: 30px;
+}
+
+
+.logo img {
+    width: 50px;
+}
+
+.menu {
+    flex-grow: 1;
+    text-align: center; 
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 0 5px; 
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.menu nav a:not(:last-child) {
+    margin-right: 30px; 
+}
+
+.menu nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(45deg, #1100ff, #009dff);
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.menu nav a:hover::after {
+    width: 100%;
+}
+
+.sociais {
+    display: flex;
+    align-items: center;
+}
+
+.sociais button {
+    background-color: black;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+.link {
+    color: white;
+    text-decoration: none;
+    gap: 30px;
+}
+
+.downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+
+    .menu {
+        margin-right: -30px;
+        font-size: 1px;
+    }
+    .menu nav a{
+        padding: 0px; 
+    }
+
+    .two-columns .caixa1 {
+        flex: 1 1 100%;*/
+    }
+}
